@@ -22,7 +22,7 @@ Quais são os seus componentes:
 
 Comando **ls**, ele vai listar o conteúdo do seu diretório/pasta **home/usuario** utilizando o formato longo **-l**.
 
-## Autocomplemento com a tecla: *tab*
+# Autocomplemento com a tecla: *tab*
 
 Uma tecla muito utilizada para acelerar a sua digitação de comando, ela completa o código. Exemplo:
 
