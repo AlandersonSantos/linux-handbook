@@ -139,14 +139,111 @@ Comando usado para listar todos os arquivos, incluido os arquivos ocultos, cujos
 
 `.cache` : Amazenar dados temporários para acerelar os programas.
 
-## parâmetro -R
+## parâmetro `-R`
 
-## parâmetro -S
+Parâmetro usado para mostrar a listagem recursiva. Ele mostra o diretório atual e seus subdiretórios.
 
-## parâmetro -r
+**Comando utilizado**:
 
-## parâmetro -t
+***usuario@hostname:~$ ls -R***
 
+**Resultado**:
+
+***usuario@hostname:~$ ls -R***
+
+. (Diretório oculto)
+
+Documentos Downloads Projetos
+
+./Documentos:
+
+curriculo.pdf notas.txt
+
+./Downloads:
+
+imagem.png curso.zip
+
+./Projetos:
+
+python linux
+
+./Projetos/python:
+
+ex01.py ex02.py
+
+./Projetos/linux:
+
+---
+
+## parâmetro `-S`
+
+Parâmetro usado para ordenar os arquivos de acordo com o tamanho do arquivo.
+
+**Comando utilizado**:
+
+***usuario@hostname:~$ ls -lhS***
+
+**Resultado**:
+
+***usuario@hostname:~$ ls -lhS***
+
+-rw-r--r-- 1 usuario usuario 4.2G filme.mkv
+
+-rw-r--r-- 1 usuario usuario 1.1G backup.tar.gz
+
+-rw-r--r-- 1 usuario usuario 250M projeto.zip
+
+-rw-r--r-- 1 usuario usuario 3.0M foto.png
+
+-rw-r--r-- 1 usuario usuario 12K notas.txt
+
+---
+
+## parâmetro `-r`
+
+Usado para inverter a ordem da listagem. Se estiver do maior para o menor, ele faz a inversão do menor para o maior.
+
+**Comando utilizado**:
+
+***usuario@hostname:~$ ls -lhSr***
+
+**Resultado**:
+
+***usuario@hostname:~$ ls -lhSr***
+
+-rw-r--r-- 1 usuario usuario 12K notas.txt
+
+-rw-r--r-- 1 usuario usuario 3.0M foto.png
+
+-rw-r--r-- 1 usuario usuario 250M projeto.zip
+
+-rw-r--r-- 1 usuario usuario 1.1G backup.tar.gz
+
+-rw-r--r-- 1 usuario usuario 4.2G filme.mkv
+
+---
+
+## parâmetro `-t`
+
+Usado para ordenar os arquivos por data e hora de criação ou alteração.
+
+**Comando utilizado**:
+
+***usuario@hostname:~$ ls -lt***
+
+**Resultado**:
+
+***usuario@hostname:~$ ls -lt***
+
+-rw-r--r-- 1 usuario usuario 2048 Jul 16 20:30 relatorio.txt
+
+-rw-r--r-- 1 usuario usuario 53248 Jul 16 19:10 projeto.zip
+
+-rw-r--r-- 1 usuario usuario 1024 Jul 15 22:05 notas.txt
+
+-rw-r--r-- 1 usuario usuario 81920 Jul 14 18:40 backup.tar.gz
+
+-rw-r--r-- 1 usuario usuario 4096 Jul 10 09:12 foto.png
 
 
 # Junção de parâmetros
