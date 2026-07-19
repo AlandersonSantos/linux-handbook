@@ -78,33 +78,6 @@ Ele não deleta diretórios com arquivos dentro.
 
 ---
 
-## `rm [arquivo]`
-
-Comando utilizado para remover um arquivo. Diferente do `rmdir`, ele apaga o arquivo especificado.
-
-**Comando utilizado:**
-
-usuario@hostname:~$ rm ListaDeCompras.txt
-
----
-
-## `rm -r -f`
-
-Comando usado para remover diretórios com arquivos dentro. Ele não solicita confirmação e apaga tudo de forma forçada, por isso deve ser utilizado com muito cuidado.
-
-**Parâmetros:**
-
-- `-r` → remove diretórios e seu conteúdo de forma recursiva.
-- `-f` → força a remoção sem pedir confirmação.
-
-**Comando utilizado:**
-
-usuario@hostname:~$ rm -rf EstudoLinux
-
-**Atenção:** esse comando pode apagar grandes quantidades de arquivos rapidamente. Verifique o caminho antes de executá-lo.
-
----
-
 ## `pwd`
 
 Comando usado para mostrar o caminho do diretório em que você está.
@@ -143,6 +116,50 @@ Ele vai abrir uma interface de texto para que você possa editar e escrever ness
 
 Comando usado para mostrar o que está escrito em um arquivo de texto.
 
+**Comando utilizado**:
+
+***usuario@hostname:~$ cat ListaDeCompras.txt***
+
+Para editar esse arquivo, podemos utilizar o **nano**.
+
+**Comando utilizado**:
+
+***usuario@hostname:~$ cat ListaDeCompras.txt***
+
+Lista de comprar:
+
+banana
+
+maça
+
+pera
+
+uva
+
+
+---
+## `tac`
+
+Comando usado para mostrar o que está escrito em um arquivo de texto, mas com a ordem dos valores ao contrário. Exemplo: o primeiro passa a ser o último, e o último passa a ser o primeiro.
+
+**Comando utilizado**:
+
+***usuario@hostname:~$ tac ListaDeCompras.txt***
+
+**Resultado**:
+
+***usuario@hostname:~$ tac ListaDeCompras.txt***
+
+uva
+
+pera
+
+maçã
+
+banana
+
+Lista de compras:
+
 ---
 
 ## `[comando] --help`
@@ -170,6 +187,21 @@ Para sair do manual, pressione a tecla `q`.
 
 ---
 
+## `less`
+
+Comando usado para paginar arquivos. Muitas vezes é utilizado no lugar do `cat` ou `tac`. Ele cria uma interface isolada para visualizar o conteúdo do arquivo.
+
+**Comando utilizado**:
+
+***usuario@hostname:~$ less ListaDeCompras.txt***
+
+**Resultado**:
+
+***usuario@hostname:~$ less ListaDeCompras.txt***
+
+Ele cria uma interface isolada para visualizar o arquivo.
+
+---
 
 ## Autocomplemento com a tecla: `tab`
 
